@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { fadeIn } from "../animations";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import logo from "../img/logo.svg";
+import logo from "../img/life.svg";
 //Redux and Routes
 import { fetchSearch } from "../actions/gamesAction";
 import { useDispatch } from "react-redux";
@@ -75,6 +75,7 @@ const Logo = styled(motion.div)`
   img {
     height: 2rem;
     width: 2rem;
+    margin-right: 0.4rem;
   }
 `;
 
