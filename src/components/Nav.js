@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 //Animation
+import { fadeIn } from "../animations";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import logo from "../img/logo.svg";
@@ -29,7 +30,7 @@ const Nav = () => {
   };
 
   return (
-    <StyledNav>
+    <StyledNav variants={fadeIn} initial="hidden" animate="show">
       <Logo onClick={clearSearched}>
         <img src={logo} alt="logo" />
         <h1>Revive</h1>
