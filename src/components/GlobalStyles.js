@@ -48,6 +48,10 @@ const GlobalStyles = createGlobalStyle`
         font-weight: bold;
         font-family: "Montserrat", sans-serif;
     }
+    .credit{
+        text-align: center;
+        padding: 2rem 0rem;
+    }
 `;
 
 export default GlobalStyles;

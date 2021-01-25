@@ -90,6 +90,7 @@ const Home = () => {
                 />
               ))}
             </Games>
+            <div className="credit">Made by Alex Dang</div>
           </div>
         ) : (
           <img className="loadingGif" src={loadingGif} alt="loading GIF" />
