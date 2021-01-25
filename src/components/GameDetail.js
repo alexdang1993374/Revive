@@ -43,22 +43,15 @@ const GameDetail = ({ pathId }) => {
 
   //Get platform images
   const getPlatform = (platform) => {
-    switch (platform) {
-      case "PlayStation 4":
-        return playstation;
-      case "PlayStation 5":
-        return playstation;
-      case "Xbox One":
-        return xbox;
-      case "PC":
-        return steam;
-      case "Nintendo Switch":
-        return nintendo;
-      case "iOS":
-        return apple;
-      default:
-        return gamepad;
-    }
+    const dictionary = {
+      "PlayStation 4": playstation,
+      "PlayStation 5": playstation,
+      "Xbox One": xbox,
+      PC: steam,
+      "Nintendo Switch": nintendo,
+      iOS: apple,
+    };
+    return dictionary[platform] || gamepad;
   };
 
   //Data
@@ -136,6 +129,7 @@ const CardShadow = styled(motion.div)`
 `;
 
 const Detail = styled(motion.div)`
+  margin: 3rem 0rem;
   width: 80%;
   border-radius: 1rem;
   padding: 2rem 5rem;
@@ -153,7 +147,7 @@ const Stats = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  img{
+  img {
     width: 2rem;
     height: 2rem;
     display: inline;
