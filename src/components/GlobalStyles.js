@@ -56,6 +56,7 @@ const GlobalStyles = createGlobalStyle`
         display: flex;
         justify-content: center;
         color: #ff7676;
+        margin-bottom: 2rem;
     }
 `;
 
