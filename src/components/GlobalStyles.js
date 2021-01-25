@@ -52,6 +52,11 @@ const GlobalStyles = createGlobalStyle`
         text-align: center;
         padding: 2rem 0rem;
     }
+    .top{
+        display: flex;
+        justify-content: center;
+        color: #ff7676;
+    }
 `;
 
 export default GlobalStyles;

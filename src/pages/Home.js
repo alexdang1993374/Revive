@@ -91,6 +91,7 @@ const Home = () => {
               ))}
             </Games>
             <div className="credit">Made by Alex Dang</div>
+            <a className="top" href="#top">Back to top</a>
           </div>
         ) : (
           <img className="loadingGif" src={loadingGif} alt="loading GIF" />
