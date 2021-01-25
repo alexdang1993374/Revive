@@ -20,13 +20,13 @@ const Nav = () => {
   const submitSearch = (e) => {
     e.preventDefault();
     dispatch(fetchSearch(textInput));
-    setTextInput("");
   };
 
   const clearSearched = () => {
     dispatch({
       type: "CLEAR_SEARCHED",
     });
+    setTextInput("");
   };
 
   return (
@@ -36,7 +36,7 @@ const Nav = () => {
         <h1>Revive</h1>
       </Logo>
       <form className="search">
-        <input value={textInput} onChange={inputHandler} type="text" />
+        <input onClick={() => setTextInput("")} value={textInput} onChange={inputHandler} type="text" />
         <button onClick={submitSearch} type="submit">
           Search
         </button>
