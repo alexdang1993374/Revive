@@ -5,8 +5,8 @@
 <h1 id="intro">Introduction</h1>
 Revive utilizes the rawg.io API to display all the latest and hottest video games.  Users can see new, popular, and upcoming video games that are regularly updated.  Users can also look up detailed information about each video game with smooth animations and visuals.
 
-<!-- <h1 id="user_guide">User Guide</h1>
-Go to <a href="https://geschur.herokuapp.com/">geschur.herokuapp.com</a> to see Geschur in action! -->
+<h1 id="user_guide">User Guide</h1>
+Go to <a href="https://revive-games.herokuapp.com/">revive-games.herokuapp.com</a> to see Revive in action!
 
 ## To start the app:
 
